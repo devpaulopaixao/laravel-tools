@@ -13,33 +13,19 @@ class LaravelToolsServiceProvider extends ServiceProvider
      */
     public function register()
     {        
-        app()->bind('alert',function() {
-            return new \Devpaulopaixao\LaravelTools\Helpers\Alert;
-        });
-        app()->bind('domain',function() {
-            return new \Devpaulopaixao\LaravelTools\Helpers\Domain;
-        });
-        app()->bind('helper',function() {
-            return new \Devpaulopaixao\LaravelTools\Helpers\Helper;
-        });
-        app()->bind('layout',function() {
-            return new \Devpaulopaixao\LaravelTools\Helpers\Layout;
-        });
-        app()->bind('mask',function() {
-            return new \Devpaulopaixao\LaravelTools\Helpers\Mask;
-        });
-        app()->bind('moment',function() {
-            return new \Devpaulopaixao\LaravelTools\Helpers\Moment;
-        });
-        app()->bind('numeric',function() {
-            return new \Devpaulopaixao\LaravelTools\Helpers\Numeric;
-        });
-        app()->bind('text',function() {
-            return new \Devpaulopaixao\LaravelTools\Helpers\Text;
-        });
-        app()->bind('validation',function() {
-            return new \Devpaulopaixao\LaravelTools\Helpers\Validation;
-        });
+        //RETRIEVE LOADER INSTANCE
+        $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+
+        //REGISTER ALL HELPERS FROM THIS PACKAGE
+        $loader->alias('Alert',         'Devpaulopaixao\LaravelTools\Helpers\Alert');
+        $loader->alias('Domain',        'Devpaulopaixao\LaravelTools\Helpers\Domain');
+        $loader->alias('Helper',        'Devpaulopaixao\LaravelTools\Helpers\Helper');
+        $loader->alias('Layout',        'Devpaulopaixao\LaravelTools\Helpers\Layout');
+        $loader->alias('Mask',          'Devpaulopaixao\LaravelTools\Helpers\Mask');
+        $loader->alias('Moment',        'Devpaulopaixao\LaravelTools\Helpers\Moment');
+        $loader->alias('Numeric',       'Devpaulopaixao\LaravelTools\Helpers\Numeric');
+        $loader->alias('Text',          'Devpaulopaixao\LaravelTools\Helpers\Text');
+        $loader->alias('Validation',    'Devpaulopaixao\LaravelTools\Helpers\Validation');
     }
 
     /**

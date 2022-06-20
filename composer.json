@@ -19,19 +19,7 @@
             "providers":
             [
                 "Devpaulopaixao\\LaravelTools\\LaravelToolsServiceProvider"
-            ],
-            "aliases":
-            {
-                "Alert"      : "Devpaulopaixao\\LaravelTools\\Facades\\Alert::class",
-                "Domain"     : "Devpaulopaixao\\LaravelTools\\Facades\\Domain::class",
-                "Helper"     : "Devpaulopaixao\\LaravelTools\\Facades\\Helper::class",
-                "Layout"     : "Devpaulopaixao\\LaravelTools\\Facades\\Layout::class",
-                "Mask"       : "Devpaulopaixao\\LaravelTools\\Facades\\Mask::class",
-                "Moment"     : "Devpaulopaixao\\LaravelTools\\Facades\\Moment::class",
-                "Numeric"    : "Devpaulopaixao\\LaravelTools\\Facades\\Numeric::class",
-                "Text"       : "Devpaulopaixao\\LaravelTools\\Facades\\Text::class",
-                "Validation" : "Devpaulopaixao\\LaravelTools\\Facades\\Validation::class"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",

@@ -1,0 +1,39 @@
+{
+    "name": "devpaulopaixao/laravel-tools",
+    "description": "Laravel tools to provide multiple php helpers increasing usability",
+    "autoload": {
+        "psr-4": {
+            "Devpaulopaixao\\LaravelTools\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "devpaulopaixao",
+            "email": "paulinhohenrique90@yahoo.com.br"
+        }
+    ],
+    "extra":
+    {
+        "laravel":
+        {
+            "providers":
+            [
+                "Devpaulopaixao\\LaravelTools\\LaravelToolsServiceProvider"
+            ],
+            "aliases":
+            {
+                "Alert"      : "Devpaulopaixao\\Facades\\Alert::class",
+                "Domain"     : "Devpaulopaixao\\Facades\\Domain::class",
+                "Helper"     : "Devpaulopaixao\\Facades\\Helper::class",
+                "Layout"     : "Devpaulopaixao\\Facades\\Layout::class",
+                "Mask"       : "Devpaulopaixao\\Facades\\Mask::class",
+                "Moment"     : "Devpaulopaixao\\Facades\\Moment::class",
+                "Numeric"    : "Devpaulopaixao\\Facades\\Numeric::class",
+                "Text"       : "Devpaulopaixao\\Facades\\Text::class",
+                "Validation" : "Devpaulopaixao\\Facades\\Validation::class"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

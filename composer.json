@@ -1,6 +1,10 @@
 {
     "name": "devpaulopaixao/laravel-tools",
     "description": "Laravel tools to provide multiple php helpers increasing usability",
+    "license": "MIT",
+    "support": {
+        "email": "paulinhohenrique90@yahoo.com.br"
+    },
     "autoload": {
         "psr-4": {
             "Devpaulopaixao\\LaravelTools\\": "src/"

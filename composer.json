@@ -23,5 +23,7 @@
         }
     },
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "nesbot/carbon": "^2.31"
+    }
 }
